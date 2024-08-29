@@ -64,6 +64,7 @@ export const useCalculate = () => {
           break;
         case "/":
           total = firstNum / secondNum;
+          if (secondNum === 0) return;
           break;
         default:
           return;
