@@ -1,0 +1,77 @@
+/*
+==========
+Default
+==========
+*/
+:root {
+  --main-bg: rgb(58, 71, 100);
+  --keypad-bg: rgb(35, 44, 67);
+  --screen-bg: rgb(24, 32, 52);
+
+  --main-key: rgb(234, 227, 220);
+  --main-key-shadow: rgb(180, 165, 151);
+
+  --accent-key: rgb(99, 112, 151);
+  --accent-key-shadow: rgb(64, 78, 114);
+
+  --equal-key: rgb(208, 63, 47);
+  --equal-key-shadow: rgb(147, 38, 26);
+
+  --main-text: rgb(68, 75, 90);
+  --white-text: rgb(255, 255, 255);
+  --operation-text: rgb(153, 153, 153);
+  --result-text: rgb(255, 255, 255);
+  --equal-text: rgb(255, 255, 255);
+}
+
+/*
+==========
+Light
+==========
+*/
+.theme-light {
+  --main-bg: rgb(230, 230, 230);
+  --keypad-bg: rgb(209, 204, 204);
+  --screen-bg: rgb(237, 237, 237);
+
+  --main-key: rgb(229, 228, 225);
+  --main-key-shadow: rgb(166, 157, 145);
+
+  --accent-key: rgb(55, 127, 134);
+  --accent-key-shadow: rgb(27, 95, 101);
+
+  --equal-key: rgb(202, 85, 2);
+  --equal-key-shadow: rgb(137, 57, 1);
+
+  --main-text: rgb(53, 53, 44);
+  --white-text: rgb(255, 255, 255);
+  --operation-text: rgb(123, 123, 123);
+  --result-text: rgb(53, 53, 44);
+  --equal-text: rgb(255, 255, 255);
+}
+
+/*
+==========
+Violet
+==========
+*/
+.theme-violet {
+  --main-bg: rgb(22, 6, 40);
+  --keypad-bg: rgb(29, 9, 52);
+  --screen-bg: rgb(29, 9, 52);
+
+  --main-key: rgb(52, 28, 79);
+  --main-key-shadow: rgb(135, 28, 156);
+
+  --accent-key: rgb(88, 7, 125);
+  --accent-key-shadow: rgb(188, 21, 244);
+
+  --equal-key: rgb(0, 224, 209);
+  --equal-key-shadow: rgb(108, 249, 242);
+
+  --main-text: rgb(255, 229, 61);
+  --white-text: rgb(255, 255, 255);
+  --operation-text: rgb(120, 113, 63);
+  --result-text: rgb(255, 229, 61);
+  --equal-text: rgb(53, 53, 44);
+}

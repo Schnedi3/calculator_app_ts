@@ -1,0 +1,37 @@
+/*
+==========
+SCREEN
+==========
+*/
+.screen {
+  padding: 0.5rem;
+  padding-top: 1rem;
+  background-color: var(--screen-bg);
+  border-radius: 1rem;
+}
+
+.operation {
+  width: 100%;
+  font-family: LeagueSpartan;
+  font-weight: 700;
+  font-size: 1.4rem;
+  text-align: right;
+  padding-right: 1rem;
+  color: var(--operation-text);
+  background-color: transparent;
+  border: none;
+  pointer-events: none;
+}
+
+.result {
+  width: 100%;
+  font-family: LeagueSpartan;
+  font-weight: 700;
+  font-size: 3rem;
+  text-align: right;
+  padding-right: 1rem;
+  color: var(--result-text);
+  background-color: transparent;
+  border: none;
+  pointer-events: none;
+}

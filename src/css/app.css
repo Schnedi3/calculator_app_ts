@@ -1,0 +1,30 @@
+/*
+==========
+FONTS
+==========
+*/
+@font-face {
+  font-family: LeagueSpartan;
+  src: url(../assets/LeagueSpartan.ttf) format(truetype);
+}
+
+/*
+==========
+GLOBALS
+==========
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--main-bg);
+}
+
+.app {
+  font-family: LeagueSpartan;
+  font-weight: 700;
+  padding-top: 2rem;
+}
