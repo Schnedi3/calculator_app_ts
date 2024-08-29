@@ -4,19 +4,20 @@ SCREEN
 ==========
 */
 .screen {
-  padding: 0.5rem;
-  padding-top: 1rem;
-  background-color: var(--screen-bg);
+  padding: 1rem 1.5rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
   border-radius: 1rem;
+  background-color: var(--screen-bg);
 }
 
 .operation {
   width: 100%;
   font-family: LeagueSpartan;
   font-weight: 700;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   text-align: right;
-  padding-right: 1rem;
   color: var(--operation-text);
   background-color: transparent;
   border: none;
@@ -27,11 +28,21 @@ SCREEN
   width: 100%;
   font-family: LeagueSpartan;
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 3.5rem;
   text-align: right;
-  padding-right: 1rem;
   color: var(--result-text);
   background-color: transparent;
   border: none;
   pointer-events: none;
+}
+
+/*
+==========
+TABLET & DESKTOP
+==========
+*/
+@media (min-width: 600px) {
+  .screen {
+    gap: 0;
+  }
 }

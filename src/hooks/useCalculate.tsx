@@ -62,7 +62,7 @@ export const useCalculate = () => {
         case "x":
           total = firstNum * secondNum;
           break;
-        case "÷":
+        case "/":
           total = firstNum / secondNum;
           break;
         default:
@@ -70,7 +70,7 @@ export const useCalculate = () => {
       }
       const fixedTotal = parseFloat(total.toFixed(2));
       setResult(fixedTotal);
-      setFirstDigit(total.toFixed(2).toString());
+      setFirstDigit(fixedTotal.toString());
       setSecondDigit("");
       setOperation("");
     }

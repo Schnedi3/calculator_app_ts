@@ -11,8 +11,8 @@ export const Header = () => {
       <h1>calc</h1>
       <article className="themes_container">
         <h3>theme</h3>
-        <div className="slider-container">
-          <div>
+        <div className="slider_container">
+          <div className="labels">
             <label htmlFor="default">1</label>
             <label htmlFor="light">2</label>
             <label htmlFor="violet">3</label>

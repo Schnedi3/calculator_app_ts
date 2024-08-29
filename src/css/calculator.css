@@ -25,7 +25,7 @@ GRID
 .grid_container {
   padding: 1.5rem;
   display: grid;
-  gap: 1.2rem;
+  gap: 1.3rem;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   background-color: var(--keypad-bg);
   border-radius: 1rem;
@@ -37,10 +37,10 @@ KEYS
 ==========
 */
 .key {
-  padding: 1rem;
+  padding: 1rem 1rem 0.5rem;
   font-family: LeagueSpartan;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: var(--main-text);
   background-color: var(--main-key);
   border: 0;
@@ -51,14 +51,14 @@ KEYS
 }
 
 .key-delete {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: var(--white-text);
   background-color: var(--accent-key);
   box-shadow: 0 5px 0 0 var(--accent-key-shadow);
 }
 
 .key-reset {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   grid-column: span 2;
   color: var(--white-text);
   background-color: var(--accent-key);

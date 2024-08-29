@@ -71,8 +71,8 @@ export const Calculator = () => {
         <button className="key" onClick={() => handleInput("0")}>
           0
         </button>
-        <button className="key" onClick={() => handleOperation("÷")}>
-          ÷
+        <button className="key" onClick={() => handleOperation("/")}>
+          /
         </button>
         <button className="key" onClick={() => handleOperation("x")}>
           x

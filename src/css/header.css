@@ -22,43 +22,46 @@ HEADER
   letter-spacing: 1px;
 }
 
-.header_container > article {
+/* SLIDER */
+.themes_container {
   display: flex;
   align-items: center;
   gap: 1.5rem;
-  font-size: 1rem;
-  color: var(--white-text);
 }
 
-/* SLIDER */
-.slider-container {
+.slider_container {
   position: relative;
-  width: 3.6rem;
+  width: 4.5rem;
   height: 1.5rem;
   border-radius: 2rem;
   background-color: var(--keypad-bg);
 }
 
-.slider-container > input[type="radio"] {
-  display: none;
-}
-
-.slider-container > div {
+.labels {
   position: relative;
   top: -1.5rem;
   height: 3rem;
   display: flex;
   justify-content: center;
+  gap: 0.3rem;
   z-index: 1;
 }
 
-.slider-container > div > label {
+.labels > label {
   padding: 0.4rem;
   font-size: 0.8rem;
   color: var(--result-text);
 }
 
-.slider-container > .slider {
+.slider_container > input {
+  position: relative;
+  margin: 0 0.3rem;
+  top: -2.8rem;
+  display: none;
+}
+
+.slider {
+  display: flex;
   position: absolute;
   top: 0.25rem;
   left: 0.25rem;
@@ -69,16 +72,16 @@ HEADER
   transition: 0.3s;
 }
 
-.slider-container > input#default:checked ~ .slider {
+.slider_container > input#default:checked ~ .slider {
   transform: translateX(0%);
 }
 
-.slider-container > input#light:checked ~ .slider {
-  transform: translateX(100%);
+.slider_container > input#light:checked ~ .slider {
+  transform: translateX(140%);
 }
 
-.slider-container > input#violet:checked ~ .slider {
-  transform: translateX(200%);
+.slider_container > input#violet:checked ~ .slider {
+  transform: translateX(280%);
 }
 
 /*
@@ -87,7 +90,7 @@ HOVER
 ==========
 */
 @media (hover: hover) {
-  .slider-container > div > label:hover {
+  .labels > label:hover {
     color: var(--equal-key);
     cursor: pointer;
   }
