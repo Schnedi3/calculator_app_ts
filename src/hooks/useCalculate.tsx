@@ -68,8 +68,9 @@ export const useCalculate = () => {
         default:
           return;
       }
-      setResult(total);
-      setFirstDigit(total.toString());
+      const fixedTotal = parseFloat(total.toFixed(2));
+      setResult(fixedTotal);
+      setFirstDigit(total.toFixed(2).toString());
       setSecondDigit("");
       setOperation("");
     }
