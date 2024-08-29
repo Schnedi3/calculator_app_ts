@@ -6,8 +6,7 @@ HEADER
 .header_container {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .header_container > h1 {
@@ -15,73 +14,60 @@ HEADER
   color: var(--result-text);
 }
 
-.themes_container > h3 {
+.themes {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  position: relative;
+}
+
+.themes > h3 {
   font-size: 0.8rem;
   color: var(--result-text);
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
-/* SLIDER */
-.themes_container {
+.buttons_slider {
   display: flex;
-  align-items: center;
-  gap: 1.5rem;
+  flex-direction: column;
 }
 
-.slider_container {
-  position: relative;
-  width: 4.5rem;
-  height: 1.5rem;
-  border-radius: 2rem;
-  background-color: var(--keypad-bg);
-}
-
-.labels {
-  position: relative;
-  top: -1.5rem;
-  height: 3rem;
-  display: flex;
-  justify-content: center;
-  gap: 0.3rem;
-  z-index: 1;
-}
-
-.labels > label {
-  padding: 0.4rem;
-  font-size: 0.8rem;
+.buttons_slider > ol > button {
+  border: 0;
+  background-color: transparent;
+  padding: 0 0.5rem 1.5rem;
+  font-family: LeagueSpartan;
+  font-weight: 700;
+  font-size: 0.9rem;
   color: var(--result-text);
 }
 
-.slider_container > input {
-  position: relative;
-  margin: 0 0.3rem;
-  top: -2.8rem;
-  display: none;
+.buttons_slider > ol > button.active {
+  color: var(--equal-key);
 }
 
 .slider {
-  display: flex;
   position: absolute;
-  top: 0.25rem;
-  left: 0.25rem;
+  top: 1.3rem;
+  width: 4rem;
+  height: 1.5rem;
+  border-radius: 1rem;
+  background-color: var(--keypad-bg);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+}
+
+.slider > span {
   width: 1rem;
   height: 1rem;
   background-color: var(--equal-key);
   border-radius: 50%;
   transition: 0.3s;
-}
-
-.slider_container > input#default:checked ~ .slider {
-  transform: translateX(0%);
-}
-
-.slider_container > input#light:checked ~ .slider {
-  transform: translateX(140%);
-}
-
-.slider_container > input#violet:checked ~ .slider {
-  transform: translateX(280%);
 }
 
 /*
@@ -92,6 +78,10 @@ HOVER
 @media (hover: hover) {
   .labels > label:hover {
     color: var(--equal-key);
+    cursor: pointer;
+  }
+
+  .buttons_slider > ol > button:hover {
     cursor: pointer;
   }
 }
